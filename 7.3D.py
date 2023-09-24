@@ -15,7 +15,7 @@ led.start(0) #This will make the LED start with 0 brightness
 #Function for measuring distance using the sensor
 def dist_monitor():
     GPIO.output(send_pulse, True) #Send a pulse to trigger the sensor
-    time.sleep(0.00001)
+    time.sleep(0.002)
     GPIO.output(send_pulse, False)
     pulse_start = time.time()  #Tells time when the sensor sends the pulse
     pulse_end = time.time()
